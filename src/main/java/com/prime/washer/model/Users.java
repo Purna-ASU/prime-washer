@@ -22,13 +22,12 @@ public class Users {
     private String password;
 
     @Column(name = "ph_number")
-    private Integer phNumber;
+    private Long phNumber;
 
     public Users() {
-
     }
 
-    public Users(String firstName, String lastName, String emailId, String password, Integer phNumber) {
+    public Users(String firstName, String lastName, String emailId, String password, Long phNumber) {
         super();
         this.firstName = firstName;
         this.lastName = lastName;
@@ -77,11 +76,11 @@ public class Users {
         this.password = password;
     }
 
-    public Integer getPhNumber() {
+    public Long getPhNumber() {
         return phNumber;
     }
 
-    public void setPhNumber(Integer phNumber) {
+    public void setPhNumber(Long phNumber) {
         this.phNumber = phNumber;
     }
 }
